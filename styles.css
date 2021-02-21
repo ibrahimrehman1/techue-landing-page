@@ -594,6 +594,73 @@ button:focus{
 }
 
 .article-7{
-    background-color:linear-gradient(30deg, rgba(236, 65, 255, 0.1), rgba(9, 132, 227, 0.1));
-    padding: 2em;
+    background: linear-gradient(30deg, rgba(236, 65, 255, 0.1), rgba(9, 132, 227, 0.1));
+    padding: 4em;
+    margin-top: 50px;
+}
+
+.article-7-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.article-7-section > section{
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    width: 450px;
+}
+
+.article-7-section > section > h6{
+    font-size: 1rem;
+    opacity: .6;
+}
+
+.article-7-section > section > h2{
+    font-size: 2.4rem;
+    margin-top: 10px;
+}
+
+.article-7-section > section > p{
+    opacity: .6;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+.article-7-section > section > input{
+    border-radius: 10px;
+    margin-top: 20px;
+    border-width: 0px;
+    padding: 1em;
+}
+
+.article-7-section > section >textarea{
+    margin-top: 20px;
+    border-width: 0px;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.article-7-section > section > button{
+    margin-top: 20px;
+    padding: 1em;
+    border-radius: 10px;
+    background: linear-gradient(140deg, #EC41FF, #0984E3);
+    color: white;
+    border-width: 0px;
+    cursor: pointer;
+}
+
+.article-7-section > img{
+    width: 350px;
+    height: auto;
+    animation-name: move-updown;
+    position: relative;
+    animation-duration: 3000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    order: 2;
 }

@@ -21,6 +21,8 @@ function addBackgroundColor(){
     }
 }
 
+addBackgroundColor()
+
 let status1 = false;
 let status2 = false;
 function focusColor(element){
