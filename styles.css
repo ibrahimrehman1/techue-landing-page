@@ -654,7 +654,8 @@ button:focus{
 }
 
 .article-7-section > img{
-    width: 350px;
+    width: 300px;
+    align-self: center;
     height: auto;
     animation-name: move-updown;
     position: relative;
@@ -663,4 +664,42 @@ button:focus{
     animation-iteration-count: infinite;
     animation-direction: alternate;
     order: 2;
+}
+
+.footer{
+    padding: 3em;
+    background: linear-gradient(140deg, #EC41FF, #0984E3);
+    color: white;
+}
+
+.footer-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-section > section{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+}
+
+
+.footer-section p{
+    margin-top: 20px;
+}
+
+.footer-section h3{
+    font-size: 1.6rem;
+}
+
+.light-social > div{
+    background-color: rgba(255,255,255, 0.2);
+}
+
+.footer > h6{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1rem;
 }
