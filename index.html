@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page 4</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/4af1b7453a.js" crossorigin="anonymous"></script>
 </head>
@@ -181,21 +185,21 @@
             <section class="article-4-section">
                 <h6>Features stories</h6>
                 <h2>Our blog</h2>
-                <div>
-                    <a href="#">ALL</a>
+                <!-- <div>
+                    <a href="#" onclick="remove()">ALL</a>
                     <a href="#">CREATIVE</a>
                     <a href="#">FINTECH</a>
                     <a href="#">MODERN</a>
                     <a href="#">MARKETING</a>
-                </div>
+                </div> -->
                 <article class="article-1 article-4-sub-section">
-                    <section>
+                    <section class="sub-section1-article-1">
                         <img src="./ecommerce-addons-img.svg" alt="Ecommerce Addons Image">
                         <h3>Mobile application</h3>
                         <p>This is a great section to introduce some of your companies highlighted services.</p>
                         <button type="button">View More</button>
                     </section>
-                    <section>
+                    <section class="sub-section2-article-1">
                         <img src="./mobile-app-img.svg" alt="Mobile App Image">
                         <h3>Social integration</h3>
                         <p>Why not highlight the most popular of your top services with a much more vibrant gradient colour like this to help grap visitors' attention.
@@ -204,7 +208,7 @@
                         <button type="button" class="secondBtn">View More</button>
         
                     </section>
-                    <section>
+                    <section class="sub-section3-article-1">
                         <img src="./social-integration-img.svg" alt="Social Integration Image">
                         <h3>Ecommerce</h3>
                         <p>This is a great section to introduce some of your companies highlighted services.</p>
@@ -225,12 +229,47 @@
             <section class="article-6-section">
                 <h6>What they say about us</h6>
                 <h2>Client reviews</h2>
-                <img src="./images/user.svg" alt="User Image">
-                <h4>John McDonald</h4>
-                <span>Software Engineer</span>
-                <div class="article-6-div">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, magni aliquid corporis aliquam quo deserunt vero voluptatum rerum facere reprehenderit!
+            
+                <!-- Slider main container -->
+                <div class="swiper-container" style="margin-top: 40px;">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./images/user.svg" alt="User Image">
+                        <h4>John McDonald</h4>
+                        <span>Software Engineer</span>
+                        <div class="article-6-div">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, magni aliquid corporis aliquam quo deserunt vero voluptatum rerum facere reprehenderit!
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./user2.svg" alt="User Image">
+                        <h4>Margaret Fletcher</h4>
+                        <span>Sales Executive</span>
+                        <div class="article-6-div">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, magni aliquid corporis aliquam quo deserunt vero voluptatum rerum facere reprehenderit!
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./user3.svg" alt="User Image">
+                        <h4>Fredrick Knighthood</h4>
+                        <span>Public Speaker</span>
+                        <div class="article-6-div">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, magni aliquid corporis aliquam quo deserunt vero voluptatum rerum facere reprehenderit!
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
+
+
             </section>
         </article>
         <article class="article-7" id="contactus">

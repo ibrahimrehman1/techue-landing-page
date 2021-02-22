@@ -28,9 +28,11 @@ html{
     border-radius: 30px;
     transform: rotate(55deg);
     z-index: -1;
-    right: 450px;
-    bottom: 120px;
+    display: none;
+    left: -250px;
+    top: -100px;
 }
+
 
 .tilt-sub-container-1{
     position: absolute;
@@ -133,14 +135,14 @@ html{
 header{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 1em;
     margin-top: 100px;
 }
 
 .header-img{
     height: auto;
-    width: 500px;
+    width: 400px;
     order: 2;
     position: relative;
     animation-name: move-updown;
@@ -165,6 +167,7 @@ header{
     display: flex;
     flex-direction: column;
     align-self: center;
+    width: 500px;
 }
 
 .header-section > h1{
@@ -231,8 +234,8 @@ header{
 }
 
 .article-1{
+    margin-top: 150px;
     padding: 4em;
-    margin-top: 100px;
     background-color: rgb(233, 233, 233);
     display: flex;
     flex-direction: row;
@@ -290,7 +293,7 @@ button:focus{
 }
 
 .article-2{
-    margin-top: 50px;
+    margin-top: 150px;
     padding: 1em;
     background-color: white;
     display: flex;
@@ -299,7 +302,7 @@ button:focus{
 }
 
 .article-2-img{
-    width: 30%;
+    width: 300px;
     align-self: center;
     order: 1;
     animation-name: move-updown;
@@ -463,7 +466,7 @@ button:focus{
 }
 
 .article-4{
-    margin-top: 50px;
+    margin-top: 150px;
     padding: 1em;
     background-color: white;
 }
@@ -471,7 +474,7 @@ button:focus{
 .article-4-section{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: space-around;
     text-align: center;
 }
 
@@ -503,8 +506,16 @@ button:focus{
 .article-4-sub-section{
     background-color: white !important;
     margin-top: 20px;
-    justify-content: space-evenly !important;
+    justify-content: space-around !important;
     padding: 2em !important;
+}
+
+.article-4-sub-section > section{
+    background: linear-gradient(140deg, #EC41FF, #0984E3);
+    color: white;
+}.article-4-sub-section > section > button{
+    color: white;
+    border-color: white;
 }
 
 .article-4-sub-section > section:nth-child(n + 2){
@@ -515,7 +526,7 @@ button:focus{
     background: linear-gradient(140deg, #EC41FF, #0984E3);
     padding: 4em;
     padding-bottom: 0em;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 .article-5-section{
@@ -548,7 +559,7 @@ button:focus{
 }
 
 .article-6{
-    margin-top: 50px;
+    margin-top: 150px;
     padding: 2em;
 }
 
@@ -565,13 +576,15 @@ button:focus{
 }
 
 .article-6-section > h2{
-    font-size: 2rem;
+    font-size: 2.4rem;
+    opacity: .8;
     margin-top: 10px;
 }
 
-.article-6-section > img{
+.article-6-section img{
     width: 100px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .article-6-section > h4{
@@ -585,24 +598,24 @@ button:focus{
 }
 
 .article-6-div{
-    margin-top: 20px;
-    padding: 2em 1em;
+    margin-top: 60px;
+    padding: 1em; 
     background: linear-gradient(140deg, #EC41FF, #0984E3);
     border-radius: 20px;
     color: white;
-    width: 800px;
+    width: 600px;
 }
 
 .article-7{
     background: linear-gradient(30deg, rgba(236, 65, 255, 0.1), rgba(9, 132, 227, 0.1));
     padding: 4em;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 .article-7-section{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 50px;
 }
 
@@ -675,7 +688,7 @@ button:focus{
 .footer-section{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .footer-section > section{
@@ -702,4 +715,167 @@ button:focus{
     margin-top: 20px;
     text-align: center;
     font-size: 1rem;
+}
+
+.swiper-container {
+    width: 600px;
+    height: 400px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px){
+    .tilt-container{
+        display: block;
+    }
+
+    
+}
+
+@media screen and (min-width: 1100px){
+    .header-section > h1, .header-section > p, .header-section > span{
+        color: black !important;
+    }
+
+    .article-1{
+        padding: 6em;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .article-1{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-1 > section{
+        margin-top: 100px !important;
+    }
+}
+
+@media screen and (max-width: 940px){
+    .footer > section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer > section > section, .footer > h6{
+        margin-top: 50px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 900px){
+    header{
+        flex-direction: column;
+    }
+
+    .header-section{
+        align-self: flex-start;
+    }
+
+    .header-img{
+        align-self: flex-end;
+        width: 500px;
+    }
+
+    .article-2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-2 > section{
+        margin-top: 100px;
+    }
+
+    .article-7-section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-7-section > img{
+        margin-top: 100px;
+    }
+
+    .article-5-section > img{
+        width: 600px;
+    }
+
+    .tilt-sub-container-2, .tilt-sub-container-3{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .article-3-sub-section-div1, .article-3-sub-section-div2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .article-3-sub-section-div1 > img, .article-3-sub-section-div2 > img{
+        margin-top: 20px;
+    }
+
+    .tilt-container{
+        width: 800px;
+  
+    }
+}
+
+@media screen and (max-width: 720px){
+    .tilt-container{
+        width: 700px;
+    }
+
+    .header-img{
+        width: 400px;
+    }
+
+    .header-section > h1{
+        font-size: 2.5rem;
+    }
+
+    .header-section > p, .header-section > span{
+        font-size: 1rem;
+    }
+
+    .header-section{
+        width: 400px;
+    }
+
+    .header-img-div > img{
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .article-5-section > img{
+        width: 500px;
+    }
+
+    .article-7-section > img{
+        width: 250px;
+    }
+
+    .article-6-div{
+        width: 500px;
+    }
+
+    .swiper-container{
+        width: 500px;
+    }
+
+    .tilt-container{
+        width: 500px;
+        transform: rotate(45deg);
+    }
+}
+
+@media screen and (max-width: 620px){
+    
 }
