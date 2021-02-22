@@ -10,14 +10,28 @@ window.addEventListener("scroll", addBackgroundColor);
 
 function addBackgroundColor(){
     let nav = document.querySelector("nav");
+    let hamburger = document.querySelector(".hamburger-icon")
+    let bar1 = document.querySelector("#bar-1");
+    let bar2 = document.querySelector("#bar-2");
+    let bar3 = document.querySelector("#bar-3");
     let navArr = Array.from(document.getElementsByClassName("navlink"));
     if (window.scrollY){
         nav.classList.add("navbar-style");
         navArr.map((item)=>item.classList.add("add-white"))
+        hamburger.classList.add("add-burger-color");
+        bar1.style.backgroundColor = "white";
+        bar2.style.backgroundColor = "white";
+        bar3.style.backgroundColor = "white";
+
+
+
     }else{
         nav.classList.remove("navbar-style");
         navArr.map((item)=>item.classList.remove("add-white"))
-        
+        hamburger.classList.remove("add-burger-color");
+        bar1.style.backgroundColor = "black";
+        bar2.style.backgroundColor = "black";
+        bar3.style.backgroundColor = "black";
     }
 }
 
@@ -75,10 +89,6 @@ document.querySelector(".span-2").style.backgroundColor = "white";
 
 
 
-
-
-
-
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
@@ -97,3 +107,37 @@ const swiper = new Swiper('.swiper-container', {
     },
   });
 
+document.querySelector("#burgerIcon").addEventListener("click", ()=>{
+    let nav = document.querySelector(".navbar");
+    let hamburger = document.querySelector(".hamburger-icon")
+    let bar1 = document.querySelector("#bar-1");
+    let bar2 = document.querySelector("#bar-2");
+    let bar3 = document.querySelector("#bar-3");
+    document.querySelector("#bar-1").classList.toggle("tilt-1");
+    document.querySelector("#bar-2").classList.toggle("tilt-2");
+    document.querySelector("#bar-3").classList.toggle("tilt-3");
+    document.querySelector("#hidden-div").classList.toggle("show-div")
+    document.querySelector(".div1").classList.toggle("nav-links-flex")
+    nav.classList.add("navbar-style")
+    nav.classList.toggle("navbar-extend")
+    if (nav.classList.contains("navbar-extend")){
+        document.querySelector(".navbar-div").style.flexDirection = "column";
+        hamburger.classList.add("add-burger-color");
+        Array.from(document.querySelectorAll(".hidden-div-span")).map(ele=>{
+            ele.classList.add("addColors");
+        })
+        bar1.style.backgroundColor = "white";
+        bar2.style.backgroundColor = "white";
+        bar3.style.backgroundColor = "white";
+    }
+})
+
+function minimize(){
+    let nav = document.querySelector(".navbar");
+    document.querySelector("#hidden-div").classList.remove("show-div")
+    document.querySelector("#bar-1").classList.remove("tilt-1");
+    document.querySelector("#bar-2").classList.remove("tilt-2");
+    document.querySelector("#bar-3").classList.remove("tilt-3");
+    nav.classList.remove("navbar-extend");
+    document.querySelector(".div1").classList.remove("nav-links-flex")
+}

@@ -20,31 +20,38 @@
     <nav class="navbar">
         <div class="navbar-div">
             <h2>techue.</h2>
-            <div>
-                <span>
-                    <a href="#" onmouseover="addColor(this)" onmouseout="removeColor(this)" class="navlink">Home</a>
-                    <span></span>
-                </span>
-                <span>
-                    <a href="#features" onmouseover="addColor(this)" onmouseout="removeColor(this)" class="navlink">Features</a>
-                    <span></span>
-                </span>
-                <span>
-                    <a href="#partners" onmouseover="addColor(this)" onmouseout="removeColor(this)" class="navlink">Partners</a>
-                    <span></span>
-                </span>
-                <span>
-                    <a href="#blogs" onmouseover="addColor(this)" onmouseout="removeColor(this)" class="navlink">Blog</a>
-                    <span></span>
-                </span>
-                <span>
-                    <a href="#reviews" onmouseover="addColor(this)" onmouseout="removeColor(this)" class="navlink">Reviews</a>
-                    <span></span>
-                </span>
-                <span>
-                    <a href="#contactus" onmouseover="addColor(this)" onmouseout="removeColor(this)" class="navlink">Contact</a>
-                    <span></span>
-                </span>
+            <div id="hidden-div">
+                <div class="div1">
+                    <span class="hidden-div-span">
+                        <a href="#" onmouseover="addColor(this)" onmouseout="removeColor(this)" class="navlink" onclick="minimize()">Home</a>
+                        <span></span>
+                    </span>
+                    <span class="hidden-div-span">
+                        <a href="#features" onmouseover="addColor(this)" onmouseout="removeColor(this)" class="navlink" onclick="minimize()">Features</a>
+                        <span></span>
+                    </span>
+                    <span class="hidden-div-span">
+                        <a href="#partners" onmouseover="addColor(this)" onmouseout="removeColor(this)" class="navlink" onclick="minimize()">Partners</a>
+                        <span></span>
+                    </span>
+                    <span class="hidden-div-span">
+                        <a href="#blogs" onmouseover="addColor(this)" onmouseout="removeColor(this)" class="navlink" onclick="minimize()">Blog</a>
+                        <span></span>
+                    </span>
+                    <span class="hidden-div-span">
+                        <a href="#reviews" onmouseover="addColor(this)" onmouseout="removeColor(this)" class="navlink" onclick="minimize()">Reviews</a>
+                        <span></span>
+                    </span>
+                    <span class="hidden-div-span">
+                        <a href="#contactus" onmouseover="addColor(this)" onmouseout="removeColor(this)" class="navlink" onclick="minimize()">Contact</a>
+                        <span></span>
+                    </span>
+                </div>
+            </div>
+            <div class="hamburger-icon" id="burgerIcon">
+                <span id="bar-1"></span>
+                <span id="bar-2"></span>
+                <span id="bar-3"></span>
             </div>
         </div>
     </nav>
@@ -54,8 +61,8 @@
             <p>Techue is a vibrant, lightweight landing page template for all businesses.</p>
             <span>Start your 90-day free trial now.</span>
             <div class="header-img-div">
-                <img src="./apple_icon.png" alt="Apple Icon">
-                <img src="./gplay_icon.png" alt="Google Play Icon">
+                <img src="./images/apple_icon.png" alt="Apple Icon">
+                <img src="./images/gplay_icon.png" alt="Google Play Icon">
             </div>
             <section class="header-social-div">
                 <div><i class="fab fa-facebook-f"></i></div>
@@ -64,18 +71,18 @@
                 <div><i class="fab fa-twitter"></i></div>
             </section>
         </section>
-        <img src="./header-img.svg" alt="Header Image" class="header-img">
+        <img src="./images/header-img.svg" alt="Header Image" class="header-img">
     </header>
     <main class="main-container">
         <article class="article-1">
             <section>
-                <img src="./ecommerce-addons-img.svg" alt="Ecommerce Addons Image">
+                <img src="./images/ecommerce-addons-img.svg" alt="Ecommerce Addons Image">
                 <h3>Mobile application</h3>
                 <p>This is a great section to introduce some of your companies highlighted services.</p>
                 <button type="button">View More</button>
             </section>
             <section>
-                <img src="./mobile-app-img.svg" alt="Mobile App Image">
+                <img src="./images/mobile-app-img.svg" alt="Mobile App Image">
                 <h3>Social integration</h3>
                 <p>Why not highlight the most popular of your top services with a much more vibrant gradient colour like this to help grap visitors' attention.
 
@@ -84,14 +91,14 @@
 
             </section>
             <section>
-                <img src="./social-integration-img.svg" alt="Social Integration Image">
+                <img src="./images/social-integration-img.svg" alt="Social Integration Image">
                 <h3>Ecommerce</h3>
                 <p>This is a great section to introduce some of your companies highlighted services.</p>
                 <button type="button">View More</button>
             </section>
         </article>
         <article class="article-2" id="features">
-            <img src="./features.png" alt="Features Img" class="article-2-img">
+            <img src="./images/features.png" alt="Features Img" class="article-2-img">
             <section class="article-2-section">
                 <h6>About our application</h6>
                 <h2>Some of our features</h2>
@@ -99,7 +106,7 @@
                 <div class="article-2-section-div">
                     <div class="article-2-section-div-col1">
                         <div class="article-2-section-div-col1-div1">
-                            <img src="./financial-guard-img.svg" alt="Financial Guard Image">
+                            <img src="./images/financial-guard-img.svg" alt="Financial Guard Image">
                             <section class="article-2-section-div-col1-div1-section">
                                 <h4>Financial Assist</h4>
                                 <p>Helping project your account details safely and securely.
@@ -112,14 +119,14 @@
                             </section>
                         </div>
                         <div class="article-2-section-div-col1-div2">
-                            <img src="./launch-pad-img.svg" alt="Launch Pad Image">
+                            <img src="./images/launch-pad-img.svg" alt="Launch Pad Image">
                             <section class="article-2-section-div-col1-div2-section">
                                 <h4>Launch Pad</h4>
                                 <p>Get ready for take off in a short matter of seconds.</p>
                             </section>
                         </div>
                         <div class="article-2-section-div-col1-div3">
-                            <img src="./happy-customers-img.svg" alt="">
+                            <img src="./images/happy-customers-img.svg" alt="">
                             <section class="article-2-section-div-col1-div3-section">
                                 <h4>Happy Customers</h4>
                                 <p>We pride ourselves in excellent client service.</p>
@@ -128,21 +135,21 @@
                     </div>
                     <div class="article-2-section-div-col2">
                         <div class="article-2-section-div-col2-div1">
-                            <img src="./fulfillment-service-img.svg" alt="">
+                            <img src="./images/fulfillment-service-img.svg" alt="">
                             <section class="article-2-section-div-col2-div1-section">
                                 <h4>Fulfilment Service</h4>
                                 <p>We sort out the business logistics so you don't have to.</p>
                             </section>
                         </div>
                         <div class="article-2-section-div-col2-div2">
-                            <img src="./support-247-img.svg" alt="">
+                            <img src="./images/support-247-img.svg" alt="">
                             <section class="article-2-section-div-col2-div2-section">
                                 <h4>Support 24/7</h4>
                                 <p>Your business never stops working so neither do we.</p>
                             </section>
                         </div>
                         <div class="article-2-section-div-col2-div3">
-                            <img src="./social-compatibility-img.svg" alt="">
+                            <img src="./images/social-compatibility-img.svg" alt="">
                             <section class="article-2-section-div-col2-div3-section">
                                 <h4>Social Integration</h4>
                                 <p>Connect with a whole host of social media platforms.</p>
@@ -194,13 +201,13 @@
                 </div> -->
                 <article class="article-1 article-4-sub-section">
                     <section class="sub-section1-article-1">
-                        <img src="./ecommerce-addons-img.svg" alt="Ecommerce Addons Image">
+                        <img src="./images/ecommerce-addons-img.svg" alt="Ecommerce Addons Image">
                         <h3>Mobile application</h3>
                         <p>This is a great section to introduce some of your companies highlighted services.</p>
                         <button type="button">View More</button>
                     </section>
                     <section class="sub-section2-article-1">
-                        <img src="./mobile-app-img.svg" alt="Mobile App Image">
+                        <img src="./images/mobile-app-img.svg" alt="Mobile App Image">
                         <h3>Social integration</h3>
                         <p>Why not highlight the most popular of your top services with a much more vibrant gradient colour like this to help grap visitors' attention.
         
@@ -209,7 +216,7 @@
         
                     </section>
                     <section class="sub-section3-article-1">
-                        <img src="./social-integration-img.svg" alt="Social Integration Image">
+                        <img src="./images/social-integration-img.svg" alt="Social Integration Image">
                         <h3>Ecommerce</h3>
                         <p>This is a great section to introduce some of your companies highlighted services.</p>
                         <button type="button">View More</button>
@@ -222,7 +229,7 @@
                 <h2>Made to pixel perfection
                 </h2>
                 <p>Show your clients something eye catching here to grab their attention and make them want to signup to your great service today</p>
-                <img src="./perfection-header-img.png" alt="Perfection Image">
+                <img src="./images/perfection-header-img.png" alt="Perfection Image">
             </section>
         </article>
         <article class="article-6" id="reviews">
@@ -244,7 +251,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./user2.svg" alt="User Image">
+                        <img src="./images/user2.svg" alt="User Image">
                         <h4>Margaret Fletcher</h4>
                         <span>Sales Executive</span>
                         <div class="article-6-div">
@@ -252,7 +259,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./user3.svg" alt="User Image">
+                        <img src="./images/user3.svg" alt="User Image">
                         <h4>Fredrick Knighthood</h4>
                         <span>Public Speaker</span>
                         <div class="article-6-div">
@@ -283,7 +290,7 @@
                     <textarea name="Feedback" id="feedback" placeholder="Message" cols="30" rows="10"></textarea>
                     <button type="button">Submit message</button>
                 </section>
-                <img src="./contact.png" alt="Contact Image">
+                <img src="./images/contact.png" alt="Contact Image">
             </section>
         </article>
     </main>
