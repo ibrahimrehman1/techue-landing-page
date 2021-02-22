@@ -136,7 +136,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 1em;
+    padding: 2em;
     margin-top: 100px;
 }
 
@@ -755,6 +755,10 @@ button:focus{
     .article-1 > section{
         margin-top: 100px !important;
     }
+
+    .sub-section2-article-1, .sub-section3-article-1{
+        margin-left: 0px !important;
+    }
 }
 
 @media screen and (max-width: 940px){
@@ -782,7 +786,7 @@ button:focus{
 
     .header-img{
         align-self: flex-end;
-        width: 500px;
+        width: 400px;
     }
 
     .article-2{
@@ -810,6 +814,19 @@ button:focus{
     .tilt-sub-container-2, .tilt-sub-container-3{
         display: none;
     }
+
+    .header-section > h1{
+        font-size: 2.5rem;
+    }
+
+    .header-section > p, .header-section > span{
+        font-size: 1rem;
+    }
+
+    .header-img-div > img{
+        width: 160px;
+    }
+
 }
 
 @media screen and (max-width: 800px){
@@ -836,21 +853,16 @@ button:focus{
         width: 400px;
     }
 
-    .header-section > h1{
-        font-size: 2.5rem;
-    }
-
-    .header-section > p, .header-section > span{
-        font-size: 1rem;
-    }
-
+    
     .header-section{
         width: 400px;
     }
 
-    .header-img-div > img{
-        width: 160px;
+    .article-2-img, .article-7-section > img{
+        width: 250px;
     }
+
+    
 }
 
 @media screen and (max-width: 660px){
@@ -871,11 +883,158 @@ button:focus{
     }
 
     .tilt-container{
-        width: 500px;
-        transform: rotate(45deg);
+        width: 540px;
+        transform: rotate(55deg);
     }
+
+    .article-2-section-div{
+        flex-direction: column;
+        margin-top: 50px;
+        align-items: center;
+    }
+
+    .article-2-section{
+        text-align: center;
+        width: auto;
+    }
+
 }
 
 @media screen and (max-width: 620px){
+    .header-section > h1{
+        font-size: 1.8rem;
+    }
+
+    .header-section > p, .header-section > span{
+        font-size: .8rem;
+    }
+    .header-img-div > img{
+        width: 120px;
+    }
+    .header-social-div > div{
+        width: 35px;
+        height: 35px;
+    }
+
+    .header-social-div > div > i{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .header-img{
+        width: 300px;
+    }
+
+    .article-1 > section{
+        width: 220px;
+        height: 480px;
+    }
+
+    .article-1 p{
+        font-size: .8rem;
+    }
+
+    .article-1 > section:nth-child(2){
+        height: 520px !important;
+    }
+
+    .secondBtn, .article-1 > section > button{
+        width: 120px !important;
+        padding: .8em !important;
+    }
+
+    .article-2-img {
+        width: 200px;
+    }
+
+    .article-2-section > h2, .article-3-section > h2, .article-4-section > h2, .article-5-section > h2, .article-6-section > h2, .article-7-section > section > h2{
+        font-size: 2rem;
+    }
+
+    .article-2-section > h6, .article-3-section > h6, .article-4-section > h6, .article-6-section > h6, .article-7-section > section > h6{
+        font-size: .8rem;
+    }
+
+    .article-2-section > p, .article-3-section > p, .article-5-section > p, .article-7-section > section > p{
+        font-size: 1rem;
+    }
+
+    .article-2-section-div p,  .article-2-section-div h4{
+        font-size: .8rem;
+    }
+
+    .article-2-section-div img{
+        width: 40px;
+    }
+
+    .article-2-section-div-col1 > div, .article-2-section-div-col2 > div{
+        height: 120px;
+    }
+
+    .article-3-sub-section-div1 > img, .article-3-sub-section-div2 > img{
+        width: 120px !important;
+    }
+
+    .article-5-section > img{
+        width: 400px;
+    }
+
+    .article-6-div, .swiper-slide{
+        width: 500px !important; 
+    }
+
+    .article-6-div{
+        padding: .8em;
+        font-size: .8rem;
+    }
+
+    .swiper-container{
+        height: 380px !important;
+    }
+
+    .article-7-section > img{
+        width: 200px;
+    }   
+
     
+}
+
+@media screen and (max-width: 560px){
+    .swiper-slide, .swiper-container, .article-6-div{
+        width: 400px !important;
+    }
+
+    .tilt-container{
+        width: 450px;
+    }
+
+    .header-section{
+        width: 320px !important;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .header-img{
+        width: 250px;
+    }
+
+    .article-5-section > img{
+        width: 320px;
+    }
+
+    .article-7{
+        padding: 4em 1em;
+    }
+
+    .article-7-section > section{
+        width: auto;
+    }
+
+    .swiper-slide, .swiper-container, .article-6-div{
+        width: 320px !important;
+    }
+
+    .tilt-container{
+        width: 400px;
+        left: -280px;
+    }
 }
