@@ -292,6 +292,10 @@ header{
     cursor: pointer;
 }
 
+.header-img-div > img:hover{
+    transform: translateY(-10%);
+}
+
 .header-img-div > img:nth-child(2){
     margin-left: 20px;
 }
@@ -311,6 +315,16 @@ header{
     cursor: pointer;
 }
 
+.header-social-div > div:hover{
+    transform: translateY(-6%);
+
+}
+
+button:hover{
+    transform: translateY(-10%);
+
+}
+
 .header-social-div > div:nth-child(n + 2){
     margin-left: 10px;
 }
@@ -328,6 +342,18 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.article-1-section-1{
+    animation: slideInFromLeft .6s ease-in;
+}
+
+.article-1-section-2{
+    animation: slideInFromBottom .6s ease-in;
+}
+
+.article-1-section-3{
+    animation: slideInFromRight .6s ease-in;
 }
 
 .article-1 > section{
@@ -370,6 +396,47 @@ header{
     align-self: center;
     cursor: pointer;
 }
+
+/*Sliding Effects*/
+
+@keyframes slideInFromLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight{
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom{
+    0%{
+        transform: translateY(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+
 
 .secondBtn{
     color: white !important;
